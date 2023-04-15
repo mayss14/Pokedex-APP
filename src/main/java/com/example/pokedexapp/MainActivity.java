@@ -181,68 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
-
-
-
-
-        /*
-
-            try{
-
-                InputStream is = getAssets().open("");
-                int size= is.available();
-                byte[] buf= new byte[size];
-                is.read(buf);
-                is.close();
-                String json;
-                json = new String(buf, StandardCharsets.UTF_8);
-                JSONArray jarray= new JSONArray(json);
-                JSONObject jo;
-
-                 for(int i=0;i<16;i++) {
-                      jo = jarray.getJSONObject(i);
-                     loadImage(jo.getString("image"), images[i]);
-                     names[i].setText(jo.getString("name"));
-                    int id= jo.getInt("id");
-                     cards[i].setOnClickListener(new View.OnClickListener() {
-                         @Override
-                         public void onClick(View v) {
-                             Intent intent = new Intent(getApplicationContext(), InfoCard.class);
-                             intent.putExtra("id",id-1);
-                             //finish();
-                             startActivity(intent);
-                         }
-                     });
-                 }
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-    }
-
-
-       ajouter volley sur le fichier gradle
-
-        public void getcurrencies()
-         {
-         string url = "10.0.2.2"
-          requestqueue q=volley.new requestqueue(getapplicationcontext());
-          string_request = new StringRequest(Request.method.GET,url,new response.listener)
-
-          public void onResponse(){},
-          new response.errorlist()
-          {
-            onerrorresponse() {}
-          }
-           requestqueue.add(string_request);
-         }
-
-
-     */
-
-
     private void loadImage(String url, ImageView i) {
         Picasso.get()
                 .load(url)

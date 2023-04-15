@@ -97,20 +97,7 @@ public class InfoCard extends AppCompatActivity {
             RequestQueue rq = Volley.newRequestQueue(this);
             rq.add(sr);
 
-                /*
-            JSONObject jo= jarray.getJSONObject(id);
 
-            t1.setText(jo.getString("name"));
-            loadImage(jo.getString("image"),i1);
-            w.setText(jo.getString("weight"));
-            h.setText(jo.getString("height"));
-            bar1.setProgressCompat(jo.getInt("HP"),true);
-            bar2.setProgressCompat(jo.getInt("Attack"),true);
-            bar3.setProgressCompat(jo.getInt("Defense"),true);
-            bar4.setProgressCompat(jo.getInt("Sp. Attack"),true);
-            bar5.setProgressCompat(jo.getInt("Speed"),true);
-
-            */
 
         }
     }
